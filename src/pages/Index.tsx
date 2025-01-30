@@ -7,18 +7,18 @@ import { Card } from "@/components/ui/card";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background p-6">
-      <header className="mb-8">
-        <h1 className="text-2xl font-bold text-foreground mb-2">Investigation Dashboard</h1>
+      <header className="mb-8 bg-card/50 p-6 rounded-lg backdrop-blur-sm">
+        <h1 className="text-3xl font-bold text-foreground mb-4 tracking-tight">Investigation Dashboard</h1>
         <QuickSearch />
       </header>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
         <DashboardCard title="Active Cases">
           <div className="space-y-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <FileText className="h-5 w-5 text-primary" />
-                <span className="font-mono">24</span>
+                <span className="font-mono text-lg">24</span>
               </div>
               <AlertBadge level="high">8 High Priority</AlertBadge>
             </div>
@@ -30,7 +30,7 @@ const Index = () => {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <AlertTriangle className="h-5 w-5 text-alert-amber" />
-                <span className="font-mono">12</span>
+                <span className="font-mono text-lg">12</span>
               </div>
               <AlertBadge level="medium">4 New</AlertBadge>
             </div>
@@ -42,7 +42,7 @@ const Index = () => {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <Activity className="h-5 w-5 text-alert-green" />
-                <span className="font-mono">All Systems Active</span>
+                <span className="font-mono text-lg">All Systems Active</span>
               </div>
               <AlertBadge level="low">Operational</AlertBadge>
             </div>
@@ -54,7 +54,7 @@ const Index = () => {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <Shield className="h-5 w-5 text-primary" />
-                <span className="font-mono">Secure</span>
+                <span className="font-mono text-lg">Secure</span>
               </div>
               <AlertBadge level="low">Protected</AlertBadge>
             </div>
@@ -63,19 +63,19 @@ const Index = () => {
       </div>
 
       <div className="space-y-6">
-        <h2 className="text-xl font-semibold flex items-center gap-2">
-          <BookOpen className="h-5 w-5" />
+        <h2 className="text-2xl font-semibold flex items-center gap-3 mb-6 text-foreground/90">
+          <BookOpen className="h-6 w-6" />
           Guidelines & Regulations
         </h2>
         
-        <Card className="p-6">
-          <div className="space-y-6">
+        <Card className="p-8 bg-card/80 backdrop-blur-sm border-primary/10">
+          <div className="space-y-8">
             <div>
-              <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
-                <Scale className="h-4 w-4" />
+              <h3 className="text-lg font-semibold mb-4 flex items-center gap-2 text-foreground/90">
+                <Scale className="h-5 w-5" />
                 Legal Framework
               </h3>
-              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+              <ul className="list-disc pl-8 space-y-3 text-muted-foreground">
                 <li>All investigations must comply with relevant jurisdictional laws and regulations</li>
                 <li>Evidence handling must maintain proper chain of custody</li>
                 <li>All actions must be documented and logged for audit purposes</li>
@@ -84,8 +84,8 @@ const Index = () => {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-2">Investigation Protocol</h3>
-              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+              <h3 className="text-lg font-semibold mb-4 text-foreground/90">Investigation Protocol</h3>
+              <ul className="list-disc pl-8 space-y-3 text-muted-foreground">
                 <li>All cases require proper authorization before investigation</li>
                 <li>Use appropriate security measures when handling sensitive data</li>
                 <li>Regular case reviews and updates are mandatory</li>
@@ -94,8 +94,8 @@ const Index = () => {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-2">Data Handling</h3>
-              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+              <h3 className="text-lg font-semibold mb-4 text-foreground/90">Data Handling</h3>
+              <ul className="list-disc pl-8 space-y-3 text-muted-foreground">
                 <li>Sensitive data must be encrypted at rest and in transit</li>
                 <li>Access to case information is strictly on a need-to-know basis</li>
                 <li>Regular security audits and compliance checks are required</li>
@@ -103,8 +103,8 @@ const Index = () => {
               </ul>
             </div>
 
-            <div className="mt-4 p-4 bg-muted rounded-lg">
-              <p className="text-sm text-muted-foreground">
+            <div className="mt-6 p-4 bg-muted/50 rounded-lg border border-primary/5">
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 Note: These guidelines are general in nature. Always refer to your organization's specific policies and procedures, 
                 and consult with legal counsel when necessary.
               </p>
