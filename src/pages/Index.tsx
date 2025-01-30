@@ -1,7 +1,7 @@
 import { DashboardCard } from "@/components/dashboard/DashboardCard";
 import { AlertBadge } from "@/components/dashboard/AlertBadge";
 import { QuickSearch } from "@/components/dashboard/QuickSearch";
-import { Shield, AlertTriangle, FileText, Activity, Scale, BookOpen } from "lucide-react";
+import { Shield, AlertTriangle, FileText, Activity, Scale, BookOpen, Gavel } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const Index = () => {
@@ -101,6 +101,50 @@ const Index = () => {
                 <li>Regular security audits and compliance checks are required</li>
                 <li>Immediate reporting of any security incidents or breaches</li>
               </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold mb-4 flex items-center gap-2 text-foreground/90">
+                <Gavel className="h-5 w-5" />
+                Age-Related Laws & Penalties
+              </h3>
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-md font-medium mb-2 text-foreground/80">Age Classifications</h4>
+                  <ul className="list-disc pl-8 space-y-3 text-muted-foreground">
+                    <li>Minor (Under 18): Enhanced protection and special handling procedures required</li>
+                    <li>Young Adult (18-21): Age-specific considerations in investigation protocols</li>
+                    <li>Adult (21+): Standard investigation procedures apply</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="text-md font-medium mb-2 text-foreground/80">Legal Penalties</h4>
+                  <ul className="list-disc pl-8 space-y-3 text-muted-foreground">
+                    <li>Exploitation of minors: Federal offense with 15-30 years imprisonment</li>
+                    <li>Distribution of harmful content: 5-20 years imprisonment and substantial fines</li>
+                    <li>Possession of prohibited materials: Up to 10 years imprisonment per offense</li>
+                    <li>Failure to report: Criminal charges and civil penalties may apply</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="text-md font-medium mb-2 text-foreground/80">Aggravating Factors</h4>
+                  <ul className="list-disc pl-8 space-y-3 text-muted-foreground">
+                    <li>Prior convictions: Significantly increased sentences</li>
+                    <li>Position of authority: Enhanced penalties for abuse of trust</li>
+                    <li>Commercial exploitation: Additional charges and penalties</li>
+                    <li>Multiple victims: Consecutive sentencing may apply</li>
+                  </ul>
+                </div>
+
+                <div className="mt-4 p-4 bg-muted/50 rounded-lg border border-primary/5">
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Important: Penalties may vary by jurisdiction. This information is for general guidance only. 
+                    Specific cases should be evaluated by legal professionals based on applicable local and federal laws.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className="mt-6 p-4 bg-muted/50 rounded-lg border border-primary/5">
